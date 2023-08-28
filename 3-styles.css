@@ -1,0 +1,65 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-open-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: rgb(212, 81, 81);
+	margin-bottom: 15px;
+}
+
+.menu-open-button:hover {
+	width: 100px;
+	height: 100px;
+}
+
+/* burger icon */
+.menu-line {
+	background-color: white;
+	height: 2px;
+	width: 30px;
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+
+.menu-open-button:hover .menu-line {
+	margin-top: 35px;
+	margin-bottom: -25px;
+}
+
+.menu-item {
+	height: 70px;
+	width: 70px;
+	background-color: rgb(212, 81, 81);
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-left: 10px;
+
+}
+
+.menu-item .fa {
+	margin-left: 25px;
+	margin-top: 25px;
+	font-size: 20px;
+	color: white;
+}
+
+.menu-item:hover {
+	background-color: white;
+	border: 1px solid rgb(212, 81, 81);
+}
+
+
+.menu-item:hover .fa {
+	color: rgb(212, 81, 81);
+}
+
+.menu-open-button:checked .menu-item {
+	display: flex;
+}
