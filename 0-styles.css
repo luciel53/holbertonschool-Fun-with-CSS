@@ -1,0 +1,49 @@
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+ul li {
+	margin-right: 60px;
+	padding-top: 17px;
+	font-size:xx-large;
+	font-weight: bold;
+	background-color: rgb(248, 247, 247);
+	height: 490px;
+	width: 320px;
+	text-align: center;
+	border: 2px solid grey;
+	border-radius: 20px;
+}
+
+ul li:last-child {
+	margin-right: 0;
+}
+
+.icon {
+	background-image: url(0-sprite.png);
+	background-repeat: no-repeat;
+	width: 280px;
+	min-height: 400px;
+	position: absolute;
+	top: 80px;
+}
+
+.i-html {
+	background-position: 0 0;
+	margin-left: -189px;
+}
+
+.i-css {
+	background-position: -290px 0;
+	margin-left: -170px;
+}
+
+.i-js {
+	background-position: -580px 0;
+	margin-left: -215px;
+}
+
