@@ -1,0 +1,55 @@
+/* Button background color */
+.toggle-inner {
+	margin: 100px 0 0 200px;
+	width: 150px;
+	height: 45px;
+	border: 2px solid rgb(205, 204, 204);
+	border-radius: 50px;
+	background-color: rgb(237, 235, 235);;
+	text-align: right;
+	padding: 4px 0 0px 0;
+	position: relative;
+}
+
+.toggle-cb + .toggle-label .toggle-inner::before {
+	content: "No";
+	color: rgb(185, 185, 185);
+	font-size: 34px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	margin-right: 40px;
+}
+
+/* the checkbox is not displayed */
+.toggle-cb {
+	display: none;
+}
+
+/* Button front */
+.toggle-switch {
+	margin: -62px 0 0 165px;
+	width: 70px;
+	height: 70px;
+	border: 2px solid rgb(185, 185, 185);
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+}
+
+/* When checked */
+.toggle-cb:checked + .toggle-label .toggle-inner::before {
+	content: "Yes";
+	margin-right: 65px;
+	color: white;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-inner {
+	background-color: rgb(236, 80, 80);
+	transition: background 0.3s ease-in;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+	margin: -62px 0 0 315px;
+	transition: margin-left 0.3s ease-in;
+}
