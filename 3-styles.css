@@ -28,9 +28,13 @@
 	margin-bottom: -20px;
 }
 
+.menu-line-1 {
+	margin-top: 30px;
+}
+
 .menu-open-button:hover .menu-line {
-	margin-top: 35px;
-	margin-bottom: -25px;
+	margin-top: 33px;
+	margin-bottom: -20px;
 }
 
 .menu-item {
@@ -60,6 +64,30 @@
 	color: rgb(212, 81, 81);
 }
 
-.menu-open-button:checked .menu-item {
+/* checked */
+.menu-open:checked ~ .menu-open-button {
+	background-color: rgb(212, 81, 81);
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-3 {
+	display: none;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-1 {
+	transform: rotate(45deg);
+	margin-top: 33px;
+	margin-bottom: -25px;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-2 {
+	transform: rotate(-45deg);
+	margin-top: 22px;
+
+}
+
+.menu-open:checked .menu-item {
 	display: flex;
 }
