@@ -1,3 +1,11 @@
+.menu-open {
+	display: none;
+}
+
+.menu-item {
+	display: none;
+}
+
 .menu {
 	display: flex;
 	flex-direction: column;
@@ -44,7 +52,7 @@
 	border-radius: 50%;
 	margin-bottom: 15px;
 	margin-left: 10px;
-
+	text-decoration: none;
 }
 
 .menu-item .fa {
@@ -88,6 +96,9 @@
 
 }
 
-.menu-open:checked .menu-item {
+.menu-open:checked ~ .menu-item {
 	display: flex;
+	flex-direction: column;
+	max-height: 800px;
+	transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
